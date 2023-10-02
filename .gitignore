@@ -2,3 +2,4 @@
 *.pyc
 src/.DS_Store
 src/api/.DS_Store
+.DS_Store
