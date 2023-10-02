@@ -14,12 +14,3 @@ async def generate_study_plan(request_data: RequestPayload):
         return {"StudyPlan": study_plan}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-
-# router = APIRouter()
-
-# @router.post("/study-plan")
-# def study_plan(payload: RequestPayload):
-#     study_plan_service = GetStudyPlan(payload)
-#     result = study_plan_service.generate_plan()
-#     return {"study_plan": result}
